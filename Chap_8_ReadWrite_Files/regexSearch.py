@@ -4,12 +4,12 @@ import re
 regexFile = open('regexResult.txt', 'w')
 matches = []
 
-# TODO: regex search
+#  regex search
 searchRegex = re.compile(r'''(
 .*new\syork|mexico\?
 )''', re.IGNORECASE | re.VERBOSE)
 
-# TODO: for .txt all files in folder, open and read
+# for .txt all files in folder, open and read
 listDir = os.listdir()
 for file in range(len(listDir)):
     # check only .txt files
@@ -27,3 +27,5 @@ for file in range(len(listDir)):
         continue
 
 print('\n'.join(matches))
+
+# TODO: Create seperate file for matches even if this is a rather useless regex

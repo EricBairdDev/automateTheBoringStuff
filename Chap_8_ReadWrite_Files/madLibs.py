@@ -47,3 +47,5 @@ madLibAnswer.write(madContent)
 # Close files
 madLibFile.close()
 madLibAnswer.close()
+
+# TODO: See if there's a way to shorten if statements for punctuation
