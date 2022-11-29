@@ -4,26 +4,26 @@ import re
 regexFile = open('regexResult.txt', 'w')
 matches = []
 
+# TODO: regex search
 searchRegex = re.compile(r'''(
 .*new\syork|mexico\?
 )''', re.IGNORECASE | re.VERBOSE)
 
 # TODO: for .txt all files in folder, open and read
-
 listDir = os.listdir()
 for file in range(len(listDir)):
+    # check only .txt files
     if listDir[file].endswith('.txt'):
-        print(listDir[file])
+        #temp visual
+        #print(listDir[file])
+        # open file and copy content to variable, then join.
         openFile = open(listDir[file])
         readFile = openFile.readlines()
-        for reg in searchRegex.findall(readFile):
-            matches.append(reg)
-        print(readFile)
+        readFile = '\n'.join(readFile)
+        #print(readFile)
+        for match in searchRegex.findall(readFile):
+            matches.append(match)
     else:
         continue
 
-print(matches)
-
-# TODO: regex search
-
-# TODO:
+print('\n'.join(matches))
