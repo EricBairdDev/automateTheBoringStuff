@@ -14,8 +14,6 @@ listDir = os.listdir()
 for file in range(len(listDir)):
     # check only .txt files
     if listDir[file].endswith('.txt'):
-        #temp visual
-        #print(listDir[file])
         # open file and copy content to variable, then join.
         openFile = open(listDir[file])
         readFile = openFile.readlines()
