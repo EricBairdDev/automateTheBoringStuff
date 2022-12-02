@@ -28,4 +28,4 @@ for file in range(len(listDir)):
 
 print('\n'.join(matches))
 
-# TODO: Create seperate file for matches even if this is a rather useless regex
+# TODO: Create seperate file for matches to save, even if this is a rather useless regex
