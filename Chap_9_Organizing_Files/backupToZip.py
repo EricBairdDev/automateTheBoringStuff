@@ -16,9 +16,23 @@ def backupToZip(folder):
             break
         number = number + 1
 
-    # TODO: Create ZIP file.
+    # Create ZIP file.
+    print('Creating %s...' % (zipFilename))
+    backupZip = zipfile.ZipFile(zipFilename, 'w')
 
-    # TODO: Walk the entire folder tree and compress the files in each folder.
+    # Walk the entire folder tree and compress the files in each folder.
+    for foldername, subfolders, filenames in os.walk(folder):
+        print('Adding files in %s...' % (foldername))
+        #add the current folder to the ZIP file.
+        backupZip.write(foldername)
+        # add all the files in this folder to the ZIP file.
+        for filename in filenames:
+            newBase = os.path.basename(folder) + '_'
+            if filename.startswith(newBase) and filename.endswith('.zip'):
+                continue #dont backup zipfiles
+            backupZip.write(os.path.join(foldername, filename))
+    backupZip.close()
+
     print('Done.')
 
 backupToZip('C:\\Users\\ericm\\PycharmProjects\\ATBS\\Chap_9_Organizing_Files')
