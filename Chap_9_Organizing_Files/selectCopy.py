@@ -28,7 +28,6 @@ def searchFolder(folder):
     # prompt user what file type
     print(r'What file type would you like to copy? Include "."')
     fileType = str(input())
-    break
 
 # TODO: Add ability to copy another folder/filetype, create function
 
