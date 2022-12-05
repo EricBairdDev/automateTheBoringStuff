@@ -29,20 +29,20 @@ def shopKeep():
 def purchaseItem():
     print('What would you like to purchase?\nYou have ' + str(playerInv['Gold']) + ' Gold.')
     purchase = str(input())
+    # deduct item and cost
     if purchase in npcInv:
         npcInv[purchase] -= 1
+        playerInv['Gold'] = playerInv['Gold'] - itemCost[purchase]
+        npcInv['Gold'] = npcInv['Gold'] + itemCost[purchase]
     elif purchase == 'None':
         shopKeep()
     else:
         print('Item not available')
         purchaseItem()
 
-def deductGold():
 
 shopKeep()
 # accept player prompt
 while True:
     purchaseItem()
-# deduct item and cost
-# show new inventory
-# ask player if they want to buy anything else or exit
+
