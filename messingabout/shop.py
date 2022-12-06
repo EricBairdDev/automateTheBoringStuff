@@ -34,6 +34,7 @@ def purchaseItem():
         npcInv[purchase] -= 1
         playerInv['Gold'] = playerInv['Gold'] - itemCost[purchase]
         npcInv['Gold'] = npcInv['Gold'] + itemCost[purchase]
+        checkItems()
     elif purchase == 'None':
         shopKeep()
     else:
