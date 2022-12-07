@@ -10,3 +10,11 @@ else:
     address = pyperclip.paste()
 
 webbrowser.open('https://www.google.com/maps/place/' + address)
+
+# import requests
+# res = requests.get('http://inventwithpython.com/page_that_does_not_exist')
+# try:
+#   res.raise_for_status()
+# except Exception as exc:
+#   print('There was a problem: %s' % (exc))
+# ^^^^^ to handle res.raise_for_status() without crashing
