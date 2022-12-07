@@ -3,6 +3,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.debug('Start of program')
 # logging.disable(logging.CRITICAL) USE THIS TO TURN OFF Logging
+# Logging levels: debug, info, warning, error, critical
 def factorial(n):
     logging.debug('Start of factorial(%s)' % (n))
     total = 1
