@@ -78,12 +78,12 @@ linkElem.attrs
 Q: 14. Running import selenium doesn’t work. How do you properly import the
 selenium module?
 
-
+from selenium import webdriver
 
 Q: 15. What’s the difference between the find_element_* and find_elements_*
 methods?
 
-
+one finds the first, the other finds all
 
 Q: 16. What methods do Selenium’s WebElement objects have for simulating mouse
 clicks and keyboard keys?
