@@ -1,0 +1,99 @@
+1670560619071	geckodriver	INFO	Listening on 127.0.0.1:49323
+1670560622090	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49324" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilePJLW1x"
+1670560622433	Marionette	INFO	Marionette enabled
+1670560622438	Marionette	INFO	Listening on port 49346
+WebDriver BiDi listening on ws://127.0.0.1:49324
+Read port: 49346
+1670560622566	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilePJLW1x\\search.json.mozlz4", (void 0), 226))
+DevTools listening on ws://127.0.0.1:49324/devtools/browser/f58825ad-81f9-4ac1-8093-2fb04ec59d24
+1670560758373	geckodriver	INFO	Listening on 127.0.0.1:49778
+1670560761342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49779" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilesuaQWu"
+1670560761701	Marionette	INFO	Marionette enabled
+1670560761707	Marionette	INFO	Listening on port 49826
+Read port: 49826
+WebDriver BiDi listening on ws://127.0.0.1:49779
+1670560761821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilesuaQWu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49779/devtools/browser/f86c63c0-8a34-4ebe-ad1b-3b03b459e642
+1670560766507	Marionette	INFO	Stopped listening on port 49826
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 28488, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 28488, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670560779769	geckodriver	INFO	Listening on 127.0.0.1:49881
+1670560782778	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49882" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilezIWoid"
+1670560783110	Marionette	INFO	Marionette enabled
+1670560783115	Marionette	INFO	Listening on port 49897
+WebDriver BiDi listening on ws://127.0.0.1:49882
+Read port: 49897
+1670560783299	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilezIWoid\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49882/devtools/browser/1c925efe-618c-477a-8075-853040fb7a68
+1670560789018	Marionette	INFO	Stopped listening on port 49897
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 33556, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670560830778	geckodriver	INFO	Listening on 127.0.0.1:50079
+1670560833790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50080" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilezcKSMN"
+1670560834098	Marionette	INFO	Marionette enabled
+1670560834102	Marionette	INFO	Listening on port 50094
+WebDriver BiDi listening on ws://127.0.0.1:50080
+Read port: 50094
+1670560834329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofilezcKSMN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50080/devtools/browser/0ed7367e-cc42-427c-852f-ded98c28c367
+1670560857998	Marionette	INFO	Stopped listening on port 50094
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "50135" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofileatgs7o"
+1670560849655	Marionette	INFO	Marionette enabled
+1670560849660	Marionette	INFO	Listening on port 50167
+WebDriver BiDi listening on ws://127.0.0.1:50135
+Read port: 50167
+1670560849773	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofileatgs7o\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50135/devtools/browser/0da29561-3ead-4246-a9fc-9d95c39b7359
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1670560854300	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 574: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1670561179228	Marionette	INFO	Stopped listening on port 50167
+[Parent 36144, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670562924293	geckodriver	INFO	Listening on 127.0.0.1:52702
+1670562927308	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52703" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofile1uXNN5"
+1670562927815	Marionette	INFO	Marionette enabled
+1670562927821	Marionette	INFO	Listening on port 52722
+Read port: 52722
+WebDriver BiDi listening on ws://127.0.0.1:52703
+1670562927955	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofile1uXNN5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52703/devtools/browser/dfba674c-c87a-4dc0-bbdf-459879c4295d
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1670562932150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1670563561096	Marionette	INFO	Stopped listening on port 52722
+[Parent 25240, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 25240, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 25240, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670565635958	geckodriver	INFO	Listening on 127.0.0.1:54948
+1670565638967	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54949" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofileD6F9W7"
+1670565639263	Marionette	INFO	Marionette enabled
+1670565639267	Marionette	INFO	Listening on port 54965
+Read port: 54965
+WebDriver BiDi listening on ws://127.0.0.1:54949
+1670565639357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofileD6F9W7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54949/devtools/browser/75dc33cf-3e0c-4c2b-9c52-d31402074833
+JavaScript error: https://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1670566463750	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
