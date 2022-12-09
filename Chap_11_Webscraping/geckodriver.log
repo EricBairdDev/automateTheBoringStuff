@@ -450,3 +450,18 @@ DevTools listening on ws://127.0.0.1:49662/devtools/browser/1c6fcf56-3e5e-41cf-a
 1670575057691	Marionette	INFO	Stopped listening on port 49685
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 [Parent 33712, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670615418136	geckodriver	INFO	Listening on 127.0.0.1:51475
+1670615421139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51476" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofileC4ljqc"
+1670615421585	Marionette	INFO	Marionette enabled
+1670615421590	Marionette	INFO	Listening on port 51503
+Read port: 51503
+WebDriver BiDi listening on ws://127.0.0.1:51476
+1670615421704	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ericm\\AppData\\Local\\Temp\\rust_mozprofileC4ljqc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51476/devtools/browser/d0b90544-be8d-4537-8667-5998408865da
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1670615423834	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1670615434335	Marionette	INFO	Stopped listening on port 51503
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 12312, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
