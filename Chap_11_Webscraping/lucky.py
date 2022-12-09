@@ -3,7 +3,7 @@
 
 import requests, sys, webbrowser, bs4
 
-print('Googling...') #displayu text while downloading the google page
+print('Googling...') #display text while downloading the google page
 res = requests.get('https://www.google.com/search?q=linguistics')
 res.raise_for_status()
 
