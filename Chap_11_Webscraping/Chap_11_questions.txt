@@ -89,7 +89,7 @@ Q: 16. What methods do Selenium’s WebElement objects have for simulating mouse
 clicks and keyboard keys?
 
 click() and send_keys()
-
+im
 Q: 17. You could call send_keys(Keys.ENTER) on the Submit button’s WebElement
 object, but what is an easier way to submit a form with Selenium?
 
