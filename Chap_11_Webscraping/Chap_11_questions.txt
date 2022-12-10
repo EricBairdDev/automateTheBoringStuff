@@ -88,10 +88,13 @@ one finds the first, the other finds all
 Q: 16. What methods do Selenium’s WebElement objects have for simulating mouse
 clicks and keyboard keys?
 
-
+click() and send_keys()
 
 Q: 17. You could call send_keys(Keys.ENTER) on the Submit button’s WebElement
 object, but what is an easier way to submit a form with Selenium?
+
+calling submit() on an element within a form submit
+
 Q: 18. How can you simulate clicking a browser’s Forward, Back, and Refresh
 
-
+back(), forward(), refresh() WebDriver object
