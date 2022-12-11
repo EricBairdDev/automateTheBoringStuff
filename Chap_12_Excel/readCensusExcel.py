@@ -11,8 +11,17 @@ countyData = {}
 print('Reading rows...')
 for row in range(2, sheet.max_row + 1):
     # Each row in the spreadsheet has data for one sensus tract
-    state = sheet['B' + str(row)].value
-    county = sheet['C' + str(row)].value
-    pop = sheet['D' + str(row)].value
+    state   = sheet['B' + str(row)].value
+    county  = sheet['C' + str(row)].value
+    pop     = sheet['D' + str(row)].value
+    #make sure the key for this county is in this state exists.
+    countyData.setdefault(state, {})
+    #make sure the key for this county in this state exists
+    countyData[state].setdefault(county, {'tracts': 0, 'pop': 0})
+
+    #each rrow represents one census tract, so increment by one.
+    countyData[state][county]['tracts'] += 1
+    #increase the county pop by the pop in this census tract.
+    countyData[state][county]['pop'] += int(pop)
 
 #TODO: Open a new text file and write the contents of countyData to it
