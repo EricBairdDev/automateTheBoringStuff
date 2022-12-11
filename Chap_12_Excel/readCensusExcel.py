@@ -7,7 +7,7 @@ wb = openpyxl.load_workbook('censuspopdata.xlsx')
 sheet = wb['Population by Census Tract']
 countyData = {}
 
-#TODO: Fill in countyData with each county's pop and tracts
+# Fill in countyData with each county's pop and tracts
 print('Reading rows...')
 for row in range(2, sheet.max_row + 1):
     # Each row in the spreadsheet has data for one sensus tract
@@ -24,4 +24,9 @@ for row in range(2, sheet.max_row + 1):
     #increase the county pop by the pop in this census tract.
     countyData[state][county]['pop'] += int(pop)
 
-#TODO: Open a new text file and write the contents of countyData to it
+# Open a new text file and write the contents of countyData to it
+print('Writing results...')
+resultFile = open('census2020.py', 'w')
+resultFile.write('allData = ' + pprint.pformat(countyData))
+resultFile.close()
+print('Done.')
