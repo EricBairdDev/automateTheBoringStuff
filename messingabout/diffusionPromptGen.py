@@ -13,3 +13,4 @@ print('Enter neutral negative prompt:')
 #ask user for weighting
 print('Negative prompt for weighting ' + str(weighting) + ':')
 #spit out prompt to be copy and pasted to clipboard
+# pyperclip.copy() COMMENT OUT LATER
