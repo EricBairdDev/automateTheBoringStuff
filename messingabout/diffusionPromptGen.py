@@ -11,5 +11,5 @@ print('Enter prompt for ' + str(weighting) + ' weighting:')
 #ask user for negative prompt
 print('Enter neutral negative prompt:')
 #ask user for weighting
-print('Negative prompt weighting ' + str(weighting)
+print('Negative prompt for weighting ' + str(weighting) + ':')
 #spit out prompt to be copy and pasted to clipboard
