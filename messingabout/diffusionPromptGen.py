@@ -74,16 +74,25 @@ def options():
             else:
                 print('Please enter a number')
                 continue
-
-
-                    print()
-
-
-
+        elif option == 'VIEW':
+            printOut()
+            options()
+        elif option == 'COPY':
+            posNeg()
+            if pPrompt == True:
+                pyperclip.copy(', '.join(positivePrompt))
+                print('Copied: ' + ', '.join(positivePrompt))
+            else:
+                pyperclip.copy(', '.join(negativePrompt))
+                print('Copied: ' + ', '.join(negativePrompt))
         elif option == 'EXIT':
             exit()
         else:
             continue
+
+def printOut():
+    print('Positive prompts: ' + ', '.join(positivePrompt))
+    print('Negative prompts: ' + ', '.join(negativePrompt))
 
 weighting = 0
 positivePrompt = []
@@ -102,10 +111,7 @@ userPrompt()
 
 #spit out prompt to be copy and pasted to clipboard
 # pyperclip.copy() COMMENT OUT LATER
-print(', '.join(positivePrompt))
-print(', '.join(negativePrompt))
+printOut()
 
-# ask for options
-#options: add more words to p/n prompts, copy, remove
-
+#ask for options
 options()
