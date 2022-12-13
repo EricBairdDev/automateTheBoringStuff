@@ -34,6 +34,31 @@ def addWeight():
             print('Please enter y or n:')
             continue
 
+def posNeg():
+    while True:
+        print('Positive or negative? (p/n)')
+        posNeg = str(input())
+        if posNeg == 'p':
+            pPrompt = True
+            break
+        elif posNeg == 'n':
+            pPrompt = False
+            break
+        else:
+            continue
+
+def options():
+    while True:
+        option = str(input())
+        if option == 'ADD':
+            posNeg()
+            print('What would you like to add?')
+            userPrompt()
+        elif option == 'EXIT':
+            exit()
+        else:
+            continue
+
 weighting = 0
 positivePrompt = []
 negativePrompt = []
@@ -44,14 +69,17 @@ print('Insert neutral prompts, enter between each prompt, enter nothing for next
 userPrompt()
 
 #ask user for negative prompts
-print('Enter neutral negative prompt:')
+print('Enter neutral negative prompts:')
 pPrompt = False
 weighting = 0
 userPrompt()
 
 #spit out prompt to be copy and pasted to clipboard
 # pyperclip.copy() COMMENT OUT LATER
-positivePrompt = ', '.join(positivePrompt)
-print(positivePrompt)
-negativePrompt = ', '.join(negativePrompt)
-print(negativePrompt)
+print(', '.join(positivePrompt))
+print(', '.join(negativePrompt))
+
+# ask for options
+#options: add more words to p/n prompts, copy, remove
+print('Would you like to ADD, REMOVE, VIEW, or COPY anything to/from the lists? EXIT to exit.')
+options()
