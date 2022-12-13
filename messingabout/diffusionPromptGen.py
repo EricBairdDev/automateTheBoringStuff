@@ -48,12 +48,38 @@ def posNeg():
             continue
 
 def options():
+    print('Would you like to ADD, REMOVE, VIEW, or COPY anything to/from the lists? EXIT to exit.')
     while True:
         option = str(input())
         if option == 'ADD':
             posNeg()
             print('What would you like to add?')
             userPrompt()
+            options()
+        elif option == 'REMOVE':
+            posNeg()
+            print('Input number of item to be removed:')
+            num = 0
+            num = input()
+            if num.isdigit():
+                global pPrompt
+                if pPrompt == True:
+                    print(positivePrompt[num] + ' has been removed.')
+                    positivePrompt.remove(positivePrompt[num])
+                    options()
+                else:
+                    print(negativePrompt[num] + ' has been removed.')
+                    negativePrompt.remove(negativePrompt[num])
+                    options()
+            else:
+                print('Please enter a number')
+                continue
+
+
+                    print()
+
+
+
         elif option == 'EXIT':
             exit()
         else:
@@ -81,5 +107,5 @@ print(', '.join(negativePrompt))
 
 # ask for options
 #options: add more words to p/n prompts, copy, remove
-print('Would you like to ADD, REMOVE, VIEW, or COPY anything to/from the lists? EXIT to exit.')
+
 options()
