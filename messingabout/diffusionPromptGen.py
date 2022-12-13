@@ -55,11 +55,13 @@ def options():
     print('Would you like to ADD, REMOVE, VIEW, or COPY anything to/from the lists? EXIT to exit.')
     while True:
         option = str(input())
+        # ADD option
         if option == 'ADD':
             posNeg()
             print('What would you like to add?')
             userPrompt()
             options()
+        # REMOVE option
         elif option == 'REMOVE':
             posNeg()
             print('Input number of item to be removed:')
@@ -67,11 +69,11 @@ def options():
             num = input()
             if num.isdigit():
                 if pPrompt == True:
-                    print(positivePrompt[num] + ' has been removed.')
+                    print(positivePrompt[num] + ' has been removed.' + '\n')
                     positivePrompt.remove(positivePrompt[num])
                     options()
                 else:
-                    print(negativePrompt[num] + ' has been removed.')
+                    print(negativePrompt[num] + ' has been removed.' + '\n')
                     negativePrompt.remove(negativePrompt[num])
                     options()
             else:
@@ -84,10 +86,12 @@ def options():
             posNeg()
             if pPrompt == True:
                 pyperclip.copy(', '.join(positivePrompt))
-                print('Copied: ' + ', '.join(positivePrompt))
+                print('Copied: ' + ', '.join(positivePrompt) + '\n')
+                options()
             else:
                 pyperclip.copy(', '.join(negativePrompt))
-                print('Copied: ' + ', '.join(negativePrompt))
+                print('Copied: ' + ', '.join(negativePrompt) + '\n')
+                options()
         elif option == 'EXIT':
             exit()
         else:
