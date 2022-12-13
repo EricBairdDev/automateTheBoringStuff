@@ -3,11 +3,24 @@
 
 import pyperclip
 
-#ask user for neutral words
-print('Insert neutral prompts, enter between each prompt, enter nothing for next weighting:')
-#ask user for 1 weighting and so on.
 weighting = 0
-print('Enter prompt for ' + str(weighting) + ' weighting:')
+positivePrompt = []
+negativePrompt = []
+
+#ask user for neutral words
+
+while True:
+    print('Insert neutral prompts, enter between each prompt, enter nothing for next weighting:')
+    prompt = str(input())
+    if prompt == '':
+        break
+    else:
+        positivePrompt.append(prompt)
+
+#ask user for 1 weighting and so on.
+while True:
+    print('Enter prompt for ' + str(weighting) + ' weighting:')
+    prompt = str(input())
 #ask user for negative prompt
 print('Enter neutral negative prompt:')
 #ask user for weighting
