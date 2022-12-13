@@ -10,15 +10,16 @@ def userPrompt():
             break
         else:
             if pPrompt == True:
-                positivePrompt.append((lBracket * weighting) + prompt + (rBracket * weighting))
+                positivePrompt.append(('(' * weighting) + prompt + (')' * weighting))
             else:
-                negativePrompt.append((lBracket * weighting) + prompt + (rBracket * weighting))
+                negativePrompt.append(('(' * weighting) + prompt + (')' * weighting))
 
 def addWeight():
     while True:
         print('Would you like to add any weighted words? (y/n)')
         add = str(input())
         if add == 'y':
+            global weighting
             weighting += 1
             break
         elif add == 'n':
@@ -31,8 +32,6 @@ weighting = 0
 positivePrompt = []
 negativePrompt = []
 pPrompt = True
-lBracket = '('
-rBracket = ')'
 #ask user for neutral words
 print('Insert neutral prompts, enter between each prompt, enter nothing for next weighting:')
 userPrompt()
