@@ -1,5 +1,5 @@
 #! python3
-#  diffusionPromptGen.py - Adds weighting for stable difusion prompts and adds comma
+#  diffusionPromptGen.py - Adds weighting for stable diffusion prompts and adds comma
 
 import pyperclip
 
@@ -37,18 +37,21 @@ def addWeight():
 weighting = 0
 positivePrompt = []
 negativePrompt = []
-pPrompt = True
-#ask user for neutral words
+pPrompt = True  #Varible to toggle between positive and negative prompt
+
+#ask user for positive prompts
 print('Insert neutral prompts, enter between each prompt, enter nothing for next weighting:')
 userPrompt()
 
-#ask user for negative prompt
+#ask user for negative prompts
 print('Enter neutral negative prompt:')
 pPrompt = False
 weighting = 0
 userPrompt()
 
-#ask user for weighting
-print('Negative prompt for weighting ' + str(weighting) + ':')
 #spit out prompt to be copy and pasted to clipboard
 # pyperclip.copy() COMMENT OUT LATER
+positivePrompt = ', '.join(positivePrompt)
+print(positivePrompt)
+negativePrompt = ', '.join(negativePrompt)
+print(negativePrompt)
