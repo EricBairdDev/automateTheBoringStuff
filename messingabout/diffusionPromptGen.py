@@ -124,6 +124,6 @@ printOut()
 options()
 
 #TODO: Add savable prompts, list saved prompts, find common prompts
-# and add ability to add to current
+# and add ability to add to current list
 
 #TODO: Consider changing to prompt user for weight/positive/neg and input from there
