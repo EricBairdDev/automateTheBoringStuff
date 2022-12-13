@@ -5,6 +5,7 @@ import pyperclip
 
 def userPrompt():
     while True:
+        global pPrompt
         prompt = str(input())
         # if nothing entered ask if weight is wanted.
         if prompt == '':
@@ -19,11 +20,12 @@ def userPrompt():
 
 def addWeight():
     while True:
+        global pPrompt
+        global weighting
         print('Would you like to add any weighted words? (y/n)')
         add = str(input())
         #ask for added weight then prompt for word
         if add == 'y':
-            global weighting
             weighting += 1
             print('Prompt for weighting ' + str(weighting) + ':')
             userPrompt()
@@ -36,6 +38,7 @@ def addWeight():
 
 def posNeg():
     while True:
+        global pPrompt
         print('Positive or negative? (p/n)')
         posNeg = str(input())
         if posNeg == 'p':
@@ -48,6 +51,7 @@ def posNeg():
             continue
 
 def options():
+    global pPrompt
     print('Would you like to ADD, REMOVE, VIEW, or COPY anything to/from the lists? EXIT to exit.')
     while True:
         option = str(input())
@@ -62,7 +66,6 @@ def options():
             num = 0
             num = input()
             if num.isdigit():
-                global pPrompt
                 if pPrompt == True:
                     print(positivePrompt[num] + ' has been removed.')
                     positivePrompt.remove(positivePrompt[num])
