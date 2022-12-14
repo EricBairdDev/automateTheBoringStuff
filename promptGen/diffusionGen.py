@@ -1,35 +1,38 @@
 import os
 from promptLists import promptList
 
-#init variables
+# init variables
 weighting = 0
-positivePrompt = []
-negativePrompt = []
+positivePrompt = ['']
+negativePrompt = ['']
 
-def viewPrompts():
-    print('Positive Prompt: ' + positivePrompt)
-    print('Negative Prompt: ' + negativePrompt)
+def printOut():
+    print('Positive prompts: ' + ', '.join(positivePrompt))
+    print('Negative prompts: ' + ', '.join(negativePrompt))
 
-#Positive and negative prompt
+# Positive and negative prompt
 
-#ADD/LOWER WEIGHTING
+# ADD/LOWER WEIGHTING
 while True:
     print('Would you like to ADD/LOWER weighting on an item?')
 
 
-#SAVE
+# SAVE
 while True:
     print('Would you like to SAVE current prompts?')
     print('SAVE AS?')
     print('Current name exists would you like to OVERWRITE?')
-#LOAD
+# LOAD
 while True:
-    print('What would you like to LOAD?')
+    print('LOAD from FAVOURITES or TEMPLATES?')
 
-#VIEW
+# VIEW
 
-#TEMPLATE ADDONS
+
+# TEMPLATE ADDONS
 while True:
     print('ADD prompts from template?')
 
-#FAVOURITES
+# FAVOURITES
+while True:
+    print('Would you like to LOAD from FAVOURITES?')
