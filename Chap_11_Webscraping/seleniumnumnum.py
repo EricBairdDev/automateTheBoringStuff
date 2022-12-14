@@ -26,3 +26,15 @@ except:
 # browser.find_element_by_tag_name('html') is a good place to send
 # keys to the general web page. This would be useful if, for example,
 # new content is loaded once you’ve scrolled to the bottom of the page
+
+## HOW TO RUN HEADLESS:
+
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options=options, executable_path=r'C:\Utility\BrowserDrivers\geckodriver.exe')
+driver.get("http://google.com/")
+print ("Headless Firefox Initialized")
+driver.quit()
